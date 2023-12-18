@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery.js"></script>
+<script>
+$(document).ready(function(){
+  $('#wrapAllbutton').click(function(){
+    $('p').wrapAll('<div id = "test"> </div>');
+  });
+ 
+
+
+  $('#wrapInnerbutton').click(function(){
+    $('h1').wrapInner('<span class = "red"></span>');
+  });
+});
+
+</script>
+<style>
+  #test{
+        background-color: yellow;
+    }
+    
+ .red{background-color: red;}
+</style>
+</head>
+<body>
+    <h1 ><span>Lorem ipsum dolor sit.</span>;
+<p id="one">This is a paragraph.</p>
+<p>This is another paragraph.</p>
+
+<button id="wrapAllbutton">Wrap a div element around all p elements</button>
+<button id="WrapInnerbutton">Wrap  Inner</button>
+
+</body>
+</html>
