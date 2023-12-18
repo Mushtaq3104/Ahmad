@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+</head>
+<style>
+    #box
+    {
+        background : green;
+        height: 100px;
+        padding: 15px;
+        border: 1px solid black;
+        margin: 25px;
+
+        
+    }
+
+    #box2{
+        background: yellow;
+        height: 100px;
+        padding: 25px;
+        border: 1px solid red;
+        
+    }
+    
+</style>
+<body>
+    <h2>jQuery Clone() Method</h2>
+
+    <div id="box">
+        <h2>Test Box</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <span>Lorem ipsum dolor sit.</span>Totam quibusdam soluta consectetur harum tenetur!</p>
+
+    </div>
+    <div id="box2">
+        <p>This is another DIV</p></div>
+    <br>
+
+    <button id="cloneBtn">Clone</button>
+
+    <script>
+       $(document).ready(function(){
+
+$('#cloneBtn').click(function(){
+    $('#box h2').clone().prependTo('#box2');
+    $('#box p').clone().appendTo('#box2');
+
+
+    
+
+
+
+});
+});
+    
+
+
+
+    </script>
+    
+    
+
+</body>
+</html>
+
